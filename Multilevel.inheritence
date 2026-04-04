@@ -1,0 +1,35 @@
+#include<iostream.h>
+#include<conio.h>
+class abc
+{
+	public:
+	void car()
+    {
+        cout<<"This is car method";
+     }
+ };
+ class ghi:public abc
+ {
+     public:
+     void bike()
+     {
+         cout<<"This is bike method";
+     }
+ };
+ class k:public ghi
+ {
+     public:
+     void truck()
+     {
+         cout<<"This is truck method";
+     }
+ };
+ void main()
+ {
+     clrscr();
+     k obj;
+     obj.car();
+     obj.bike();
+     obj.truck();
+     getch();
+}     
