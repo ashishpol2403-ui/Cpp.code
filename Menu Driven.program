@@ -1,0 +1,66 @@
+#include<iostream.h>
+#include<conio.h>
+class abc
+{
+    public:
+    int n1,n2;
+    float result;
+    void add()
+    {
+        result=n1+n2;
+    }
+    void sub()
+    {
+       result=n1-n2;
+    }
+    void multiply()
+    {
+       result=n1*n2;
+    }
+    void divide()
+    {
+       result=n1/n2;
+    }
+    void modules()
+    {
+       result=n1%n2;
+    }
+    void display()
+    {
+        cout<<"Result:"<<result;
+    }
+};
+void main()
+{
+    clrscr();
+    abc obj;
+    int num1,num2,op;
+    cout<<"Enter 1st Integer number :";
+    cin>>num1;
+    cout<<"Enter 2nd Integer number :";
+    cin>>num2;
+    
+    obj.n1=num1;
+    obj.n2=num2;
+    
+    cout<<"1.Add\n2.sub\n3.multiply\n4.divide\n5.modules\nSelect:";
+    cin>>op;
+        
+    switch(op)
+    {
+        case 1: obj.add();obj.display();
+                break;
+        case 2: obj.sub();obj.display();
+                break;     
+        case 3: obj.multiply();obj.display();
+                break;
+        case 4: obj.divide();obj.display();
+                break;
+        case 5: obj.modules();obj.display();
+                break;
+        default:
+            cout<<"Invalid";
+                    
+    }    
+        getch();        
+}
